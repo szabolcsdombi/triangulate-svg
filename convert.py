@@ -33,7 +33,7 @@ def euler(x):
 
 
 def parse(data):
-    nargs = dict(zip('MmLlHhVvCcSsQqTtAaZz', [3, 3, 3, 3, 2, 2, 2, 2, 7, 7, 5, 5, 5, 5, 3, 3, 8, 8]))
+    nargs = dict(zip('MmLlHhVvCcSsQqTtAaZz', [3, 3, 3, 3, 2, 2, 2, 2, 7, 7, 5, 5, 5, 5, 3, 3, 8, 8, 1, 1]))
     commands = []
     for token in re.findall(r'([MmLlHhVvCcSsQqTtAaZz]|(?:-?\d+(?:\.\d+)?|-?\.\d+))', data):
         if token in 'MmLlHhVvCcSsQqTtAaZz':
